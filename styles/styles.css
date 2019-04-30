@@ -1,0 +1,418 @@
+/* Start Main Rules */
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	perspective: 200px;
+}
+
+.clearfix{
+	clear: both;
+}
+
+.container{
+	width: 1100px;
+	margin: auto;
+}
+*{
+	box-sizing: border-box;
+}
+
+::selection{
+	color: white;
+	background-color: #555;
+}
+
+/* End Main Rules */
+
+/* Start Header */
+
+.main-header{
+	background-image: url(../images/header-bg.jpg);
+	height: 600px;
+	background-size: cover;
+	padding-top: 20px;
+	position: relative;
+}
+
+.main-header .bg {
+	float: left;
+	width: 50%;
+	margin-top:15px;
+}
+
+header nav{
+	width: 50%;
+	float:right;
+}
+
+header nav ul{
+	padding: 0;
+	list-style:none;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	float:right;
+}
+
+header nav ul li{
+	display: inline-block;
+	margin-left: 15px;
+	cursor: pointer;
+}
+
+.main-header .nested-header{
+	color: white;
+	text-align:center;
+	margin-top: 15%;
+	margin-left:0;
+}
+
+.main-header .nested-header h1{
+	font-size: 40px;
+}
+
+.main-header .nested-header p{
+	margin: 40px 0;
+	font-size: 25px;
+	padding: 0 20px;
+}
+
+.main-header .nested-header button{
+	background:none;
+	padding: 20px 40px;
+	border-radius: 8px;
+	margin-left: 5%;
+	cursor: pointer;
+	border: none;
+}
+
+.main-header .nested-header button:first-of-type{
+	color: #333;
+	background-color: #DDDDDD;
+	
+}
+
+.main-header .nested-header button:first-of-type:hover{
+	background-color: #EEE;
+}
+
+.main-header .nested-header button:last-of-type{
+	color: white;
+	background-color: #7DDFE2;
+	
+}
+
+.main-header .nested-header button:last-of-type:hover{
+	background-color: #3CCED2
+}
+
+.main-header .nested-header div.anim{
+	width: 30px;
+	height: 60px;
+	border-radius: 33px;
+	border: 2px solid #FFF;
+	position: absolute;
+	left: 50%;
+	bottom: 5%;
+	text-align:center;
+}
+
+.main-header .nested-header div.anim div{
+	width: 8px;
+	height: 15px;
+	margin:5px auto;
+	background-color: #EEE;
+	animation: scrolling 1s linear infinite;
+}
+
+@keyframes scrolling{
+	0%{
+		transform:translate(0, 10px);
+		opacity: 0;
+	}
+	50%{
+		transform:translate(0, 20px);
+		opacity: .5;
+	}
+	100%{
+		transform:translate(0, 25px);
+		opacity: 0;
+	}
+}
+
+/* End Header */
+
+/* Start Be The First */
+
+.be-the-first{
+	height: 500px;
+	text-align:center;
+	color: white;
+	padding: 10%;
+	background-image: url("../images/be-the-first-bg.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+}
+.be-the-first h1{
+	margin-top: 0;
+}
+
+.be-the-first p{
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+
+.be-the-first img{
+	width: 30%;
+}
+
+/*********** End Be The First *************/
+
+
+/*********** Start Features ***********/
+.features{
+	overflow: hidden;
+	margin-top: 12%;
+}
+.features .feat{
+	width: 28.333%;
+	float: left;
+}
+.features .feat:not(:first-child){
+	margin-left: 5%;
+}
+.features .feat hr{
+	height: 5px;
+	border: none;
+}
+.features .feat:first-child hr{
+	background-color: #6D3F96;
+}
+.features .feat:nth-child(2) hr{
+	background-color: #6FCACD;
+}
+.features .feat:last-child hr{
+	background-color: #FDC05D;
+}
+.features .feat p{
+	color:#777;
+	line-height: 1.5em;
+}
+/********** End Features ************/
+
+
+/********* Start Pricing ************/
+.pricing{
+	background-color: #70CBCE;
+	height: 800px;
+	text-align:center;
+	padding-top: 5%;
+	color: #FFF;
+}
+
+.pricing h1{
+	font-size: 35px;
+}
+
+.pricing p{
+	font-size: 20px;
+	margin-bottom: 100px;
+}
+
+.pricing .products{
+	overflow: visible;
+
+}
+
+.pricing .products .product{
+	float: left;
+	width: 31.333%;
+	background-color: #FFF;
+	color: black;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	position:relative;
+	transition: all .5s ease-in-out;
+	box-shadow: 5px 5px 15px #333;
+}
+
+.pricing .products .product:nth-child(2){
+	top: -30px;
+}
+
+.pricing .products .product:nth-child(2):hover{
+	top: -40px;
+	transform:translateZ(1px)
+}
+
+.pricing .products .product:not(:nth-child(2)){
+	top: 0px;
+}
+
+.pricing .products .product:not(:nth-child(2)):hover{
+	top: -10px;
+}
+
+.pricing .products .product header {
+	background-color: #231F20;
+	color: white;
+	padding-top: 20px;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+}
+.pricing .products .product header h1{
+	margin: 0;
+	padding: 10px;
+}
+.pricing .products .product header p{
+	padding: 20px;
+	margin:0;
+}
+.pricing .products .product header:hover p{
+	background-color: #333333;
+}
+.pricing .products .product > p:first-of-type{
+	font-size:small;
+	color: #666;
+}
+
+.pricing .products .product > p {
+	border-bottom: 1px solid #EEE;
+	padding: 20px;
+	margin: 0;
+}
+
+.pricing .products .product > p:not(:first-of-type){
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.pricing .products .product > p:last-of-type{
+	margin-bottom:0;
+}
+
+.pricing .products .product span{
+	display: inline-block;
+	padding: 20px;
+	cursor: pointer;
+	color: #75CCCF;
+	width: 100%;
+}
+.pricing .products .product span:hover{
+	background-color: #EEE;
+}
+/********* End Pricing ************/
+
+/********* Start Invitation ************/
+.invitation{
+	text-align:center;
+	background-color: #F5F5F5;
+	height: 550px;
+
+}
+
+.invitation .container{
+	padding-top: 10%;
+}
+
+
+.invitation i:before{
+	display:block;
+	margin-top: 15px;
+}
+.invitation i{
+	color:#70CBCE;
+	border: 2px solid #70CBCE;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+
+}
+
+.invitation h1{
+	margin-top: 20px;
+}
+
+.invitation p{
+	margin-bottom: 20px;
+}
+
+.invitation [type="email"]{
+	width: 25%;
+	height: 35px;
+	border:none;
+	border-radius: 5px;
+	outline: none;
+	padding: 10px;
+}
+
+.invitation [type="submit"]{
+	display: block;
+	margin: 20px auto;
+	background:none;
+	border: none;
+	background-color: #70CBCE;
+	color: white;
+	padding: 15px 20px;
+	width: 15%;
+	cursor: pointer;
+}
+/********* End Invitation ************/
+
+/********* Start Testimonials ************/
+.testimonials{
+	overflow: hidden;
+	padding: 5%;
+}
+.testimonials .container div{
+	width: 70%;
+	overflow: hidden;
+	margin: auto;
+}
+.testimonials .container hr{
+	height: 2px;
+	border: none;
+	background-color: #E8EAEA;
+}
+.testimonials .container div img{
+	width: 20%;
+	float: left;
+}
+.testimonials .container .main p{
+	float: left;
+	width: 70%;
+	margin-left: 5%;
+	line-height: 1.8em;
+}
+/************ End Testimonials *************************/
+
+/********** Start Footer *********************/
+footer{
+	overflow: hidden;
+	padding: 2%;
+}
+
+footer .contact{
+	float:left;
+	width: 50%;
+}
+footer .contact span{
+	margin-right: 3%;
+	color: #777;
+}
+footer .contact i{
+	margin-right: 3%;
+	cursor: pointer;
+	color: #CCC;
+}
+footer .copyright{
+	float: right;
+}
+
+footer .copyright p{
+	margin: 0;
+	color: #CFCFCF;
+}
+/********* End Footer ************/
