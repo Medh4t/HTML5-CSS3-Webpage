@@ -179,6 +179,7 @@ header nav ul li{
 .features .feat{
 	width: 28.333%;
 	float: left;
+	text-align: center;
 }
 .features .feat:not(:first-child){
 	margin-left: 5%;
